@@ -1,4 +1,4 @@
-@charset "UTF-8";
+9@charset "UTF-8";
 /*!
 * Start Bootstrap - Creative v7.0.7 (https://startbootstrap.com/theme/creative)
 * Copyright 2013-2023 Start Bootstrap
@@ -10929,7 +10929,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/about.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11155,10 +11155,101 @@ details summary::after {
             transform: scale(1.05);
         }
 
-        .section-bg {
-            background: linear-gradient(135deg, #003973, #E5E5BE);
+        .section-bg
+         {
+             background-image:  url("../assets/img/about.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;            
             padding: 80px 0;
         }
+
+ .section-bg-aboutUs {
+    position: relative;
+    background-image: url("../assets/img/about1.jpg");
+    background-size: cover;
+    background-position-y: 10%; /* Keep your custom position */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 80px 0;
+    z-index: 1;
+}
+
+.section-bg-aboutUs::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Adjust darkness here */
+    z-index: 0;
+}
+
+.section-bg-aboutUs > .container {
+    position: relative;
+    z-index: 1; /* Make sure content sits above the dark layer */
+}
+
+
+ .section-bg-services {
+    position: relative;
+    background-image: url("../assets/img/services.jpg");
+    background-size: cover;
+    background-position-y: 10%; /* Keep your custom position */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 80px 0;
+    z-index: 1;
+}
+
+.section-bg-services::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Adjust darkness here */
+    z-index: 0;
+}
+
+.section-bg-services > .container {
+    position: relative;
+    z-index: 1; /* Make sure content sits above the dark layer */
+}
+
+
+
+ .section-bg-industry {
+    position: relative;
+    background-image: url("../assets/img/industry.jpg");
+    background-size: cover;
+    background-position-y: 10%; /* Keep your custom position */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 80px 0;
+    z-index: 1;
+}
+
+.section-bg-industry::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Adjust darkness here */
+    z-index: 0;
+}
+
+.section-bg-industry > .container {
+    position: relative;
+    z-index: 1; /* Make sure content sits above the dark layer */
+}
+
+
 
         .card {
             border: none;
@@ -11169,3 +11260,33 @@ details summary::after {
                 font-size: 1.5rem;
             }
         }
+
+
+
+.custom-service-section {
+    position: relative;
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    overflow: hidden;
+}
+
+.custom-service-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 0;
+    border-radius: 0.5rem; /* Optional: match .rounded */
+}
+
+.custom-service-section .row {
+    position: relative;
+    z-index: 1;
+}
+
+.custom-service-section .text-muted {
+    color: #f1f1f1 !important;
+}
